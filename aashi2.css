@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+svg, .effects {
+    display: rectangular;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 10px;
+    height: 48vmin;
+    width: 10px;
+    width: 64vmin;
+}
+
+/*@keyframes background-animation {
+    0%   { background: #45062E; }
+    20%  { background: #590842; }
+    35%  { background: #5E083E; }
+    50%  { background: #590842; }
+    70%  { background: #59084E; }
+    90%  { background: #35041F; }
+    100% { background: #45062E; }
+}*/
+
+svg {
+    background-image: url("http://www.cosmographics.co.uk/images/products/artistic-world-map-scale-130-million359_newcopy.jpg");
+    animation: background-animation 15s linear infinite;
+}
+
+.effects {
+   /* background: radial-gradient(circle, transparent 0%, #0F0108 60%);*/
+    height: 320px;
+    height: 95vmin;
+    width: 320px;
+    width: 95vmin;
+}
+
+path {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 0;
+    animation: dash 60s linear infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 5000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+

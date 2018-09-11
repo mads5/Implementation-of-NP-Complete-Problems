@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NP Complete Problems</title>
+<link rel="stylesheet" href="aashi.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">KNAPSACK</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">TRAVELLING SALESMAN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HAMILTONIAN PATH</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BIN PACKING</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:60px 60px">
+ <div class="container">
+
+    <!-- OUTER SHADOW -->
+    <div class="de">
+
+        <!-- TEXT -->
+        <div class="den">
+
+            <!-- LINE -->
+            <hr class="line">
+            <hr class="line">
+            <hr class="line">
+
+            <!-- SWITCH -->
+            <div class="switch">
+
+                <!-- TEXT -->
+                <label for="switch_off"><span>OFF</span></label>
+                <label for="switch_1"><span>1</span></label>
+                <label for="switch_2"><span>2</span></label>
+                <label for="switch_3"><span>3</span></label>
+                <label for="switch_4"><span>4</span></label>
+                <label for="switch_5"><span>5</span></label>
+                
+                <!-- INPUT -->
+                <input id="switch_off" name="switch" checked type="radio">
+               <input  id="switch_1" name="switch" type="radio">
+               <form action="Knapsack.jsp" method="post"> <input type="submit" id="switch_2" name="switch2" type="radio"></form>
+                 <form action="Travelling.jsp" method="post"><input type="submit" id="switch_3" name="switch3" type="radio"></form>
+                <form action="hamiltonian1.jsp" method="post"> <input  type="submit" id="switch_4" name="switch4" type="radio"></form>
+                <form action="binpacking1.jsp" method="post"> <input type="submit" id="switch_5" name="switch5" type="radio"></form>
+               
+
+                <!-- LIGHT -->
+                <div class="light"><span></span></div>
+
+                <!-- DOT -->
+                <div class="dot"><span></span></div>
+
+                <!-- CENTER -->
+                <div class="dene">
+                    <div class="denem">
+                        <div class="deneme">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="w3-text-black"></p>
+    
+
+
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    
+ <h1><u>NP PROBLEMS-</u></h1><p>
+NP is set of decision problems that can be solved by a Non-deterministic Turing Machine in Polynomial time. P is subset of NP (any problem that can be solved by deterministic machine in polynomial time can also be solved by non-deterministic machine in polynomial time).
+Informally, NP is set of decision problems which can be solved by a polynomial time, a magical algorithm that always makes a right guess among the given set of choices.
+</p>
+<h3><u>
+NP COMPLETE PROBLEMS
+</u></h3>
+<p>
+NP-complete problems are the hardest problems in NP set.  A decision problem L is NP-complete if:
+1) L is in NP (Any given solution for NP-complete problems can be verified quickly, but there is no efficient known solution).<br>
+2) Every problem in NP is reducible to L in polynomial time.
+</p>
+<h3><u>NP HARD PROBLEMS</u></h3>
+NP-hardness (non-deterministic polynomial-time hardness), in computational complexity theory, is the defining property of a class of problems that are, informally, "at least as hard as the hardest problems in NP". More precisely, a problem H is NP-hard when every problem L in NP can be reduced in polynomial time to H.
+</div>
+
+    
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+    </div>
+
+    <div class="w3-twothird">
+      <h1> </h1>
+      <h5 class="w3-padding-32"> </h5>
+
+      <p class="w3-text-grey"> </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
